@@ -14,5 +14,5 @@ for i in range(2):
   node.addService(rspec.Execute(shell="/bin/sh",command="sudo apt install -y apache2"))
   node.addService(rspec.Execute(shell="/bin/sh",command='sudo suwf allow in "Apache Full"'))
   node.addService(rspec.Execute(shell="/bin/sh",command='sudo systemctl status apache2'))
-  # Print the RSpec to the enclosing page.
-  portal.context.printRequestRSpec()
+# Print the RSpec to the enclosing page.
+portal.context.printRequestRSpec()
